@@ -66,11 +66,20 @@
       text-align: center;
     }
     .signature-block .line {
-      margin-bottom: 80px;
+      margin-bottom: 10px;
       border-bottom: 1px solid #000;
       width: 220px;
       margin-left: auto;
       margin-right: auto;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .signature-image {
+      max-width: 180px;
+      max-height: 50px;
+      object-fit: contain;
     }
     .back {
       text-align: center;
@@ -109,7 +118,7 @@
           <td>Q.965,500.00</td>
         </tr>
         <tr>
-          <td>− Returns and discounts on sales</td>
+          <td>- Returns and discounts on sales</td>
           <td>Q.6,500.00</td>
         </tr>
         <tr>
@@ -134,7 +143,7 @@
           <td>Q.568,972.00</td>
         </tr>
         <tr>
-          <td>− Finished articles II</td>
+          <td>- Finished articles II</td>
           <td>Q.35,500.00</td>
         </tr>
         <tr>
@@ -262,7 +271,7 @@
           <td>Q.298,279.10</td>
         </tr>
         <tr>
-          <td><strong>Operating Results (+)(−)</strong></td>
+          <td><strong>Operating Results (+)(-)</strong></td>
           <td>Q.127,248.90</td>
         </tr>
         <tr>
@@ -292,12 +301,26 @@
 
     <div class="signatures">
       <div class="signature-block">
-        <div class="line"></div>
+        <div class="line">
+          <svg class="signature-image" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 100 Q80 60 120 80 Q140 90 160 75 Q180 60 200 70 Q220 80 240 65 M70 120 Q100 80 140 100 Q160 110 180 95 Q200 80 220 90 Q240 100 260 85" 
+                  stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M80 110 Q110 70 150 90 Q170 100 190 85 Q210 70 230 80" 
+                  stroke="black" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
         <p>Julio Ramírez</p>
         <p>Legal Representative</p>
       </div>
       <div class="signature-block">
-        <div class="line"></div>
+        <div class="line">
+          <svg class="signature-image" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 70 Q60 40 90 50 Q110 55 130 45 Q150 35 170 40"
+                  stroke="black" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M40 80 L160 20"
+                  stroke="black" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
         <p>Alisson Aguilar</p>
         <p>Certified Accountant</p>
         <p>Registration No. 122223699</p>
@@ -305,7 +328,7 @@
     </div>
 
     <div class="back">
-      <a href="index.html">⬅ Back to index</a>
+      <a href="index.html">← Back to index</a>
     </div>
   </div>
 </body>
