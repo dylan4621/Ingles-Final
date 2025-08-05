@@ -4,7 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contrato de Trabajo</title>
-  <link rel="stylesheet" href="indice.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #2c3e50;
+      padding: 30px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+      font-size: 2rem;
+    }
+    .contract-content {
+      text-align: justify;
+    }
+    ol {
+      counter-reset: item;
+      padding-left: 0;
+    }
+    ol > li {
+      display: block;
+      margin-bottom: 1.5rem;
+      padding-left: 2rem;
+      counter-increment: item;
+    }
+    ol > li:before {
+      content: counter(item) ".";
+      font-weight: bold;
+      margin-right: 0.5rem;
+      margin-left: -2rem;
+      position: absolute;
+    }
+    .signatures {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ddd;
+    }
+    .signature-section {
+      margin: 2rem 0;
+      padding: 1rem;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+    }
+    .signature-line {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      gap: 1rem;
+    }
+    .signature-image {
+      max-width: 150px;
+      max-height: 40px;
+      object-fit: contain;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+    .signature-info {
+      flex: 1;
+    }
+    .date-filled {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -16,7 +90,7 @@
       </p>
 
       <p>
-        This employment agreement (“Agreement”) is made and effective as of July 24, 2025, by and between:
+        This employment agreement ("Agreement") is made and effective as of July 24, 2025, by and between:
       </p>
       <p>
         <strong>Employer:</strong> Banco Financiero Nacional S.A., with a mailing address of 6ª Avenida 10-12, Zona 1, Ciudad de Guatemala, Guatemala.
@@ -73,12 +147,12 @@
 
         <li>
           <strong>CONFIDENTIALITY</strong><br/>
-          The Employee understands and agrees to keep confidential any information that could be considered proprietary to the Employer (“Confidential Information”). Disclosure of Confidential Information, either directly or indirectly, shall result in litigation with the Employer seeking equitable relief to the fullest extent of the law, including but not limited to filing claims for losses and/or damages.
+          The Employee understands and agrees to keep confidential any information that could be considered proprietary to the Employer ("Confidential Information"). Disclosure of Confidential Information, either directly or indirectly, shall result in litigation with the Employer seeking equitable relief to the fullest extent of the law, including but not limited to filing claims for losses and/or damages.
         </li>
 
         <li>
           <strong>NON-COMPETE</strong><br/>
-          During the term of employment, the Employee understands that he or she will be subject to learning proprietary information which could be applied to competitors of the Employer. To protect the fiduciary interests of the Employer, the Employee agrees to withhold from working in the banking and financial services industries and from working for other national or international banks operating in Guatemala. This Non-Compete shall be in effect for 1 year following the date of Employee’s termination.
+          During the term of employment, the Employee understands that he or she will be subject to learning proprietary information which could be applied to competitors of the Employer. To protect the fiduciary interests of the Employer, the Employee agrees to withhold from working in the banking and financial services industries and from working for other national or international banks operating in Guatemala. This Non-Compete shall be in effect for 1 year following the date of Employee's termination.
         </li>
 
         <li>
@@ -102,15 +176,47 @@
         </li>
       </ol>
 
-      <div class="signatures" style="margin-top: 2rem;">
-        <p>EMPLOYER</p>
-        <p>_______________________ Gerente General    Date _________________________</p>
-        <p>Signature</p>
-        <p>______________________________</p>
-        <p>EMPLOYEE</p>
-        <p>_______________________ Senior Accountant    Date ____________________</p>
-        <p>Signature</p>
-        <p>______________________________</p>
+      <div class="signatures">
+        <div class="signature-section">
+          <p style="text-align: center;"><strong>EMPLOYER</strong></p>
+          <div style="text-align: center; margin: 2rem 0;">
+            <div style="margin: 1rem 0;">
+              <svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 25 Q25 15 40 20 Q55 25 70 18 Q85 12 100 16 Q115 20 130 15" 
+                      stroke="#1a365d" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M15 30 Q35 20 55 25 Q75 28 95 22 Q115 18 135 22" 
+                      stroke="#1a365d" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div style="margin: 0.5rem 0;">
+              <strong>Dr. Roberto Alejandro Morales</strong> - Gerente General
+            </div>
+            <div style="margin: 0.5rem 0;">
+              Date: <span class="date-filled">July 24, 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="signature-section">
+          <p style="text-align: center;"><strong>EMPLOYEE</strong></p>
+          <div style="text-align: center; margin: 2rem 0;">
+            <div style="margin: 1rem 0;">
+              <svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 20 Q30 10 45 15 Q60 18 75 12 Q90 8 105 12 Q120 16 135 10" 
+                      stroke="#2d3748" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M20 28 L130 15" 
+                      stroke="#2d3748" stroke-width="1" fill="none" stroke-linecap="round"/>
+                <circle cx="25" cy="18" r="2" fill="#2d3748"/>
+              </svg>
+            </div>
+            <div style="margin: 0.5rem 0;">
+              <strong>Lic. Juan Carlos Rodríguez Gómez</strong> - Senior Accountant
+            </div>
+            <div style="margin: 0.5rem 0;">
+              Date: <span class="date-filled">July 24, 2025</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
